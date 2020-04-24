@@ -1,18 +1,21 @@
 //Reverse a String using reversal logic
 
-
 public class ReverseStringExample
 {  
 	public static void main(String args[])
 	{  
 	String1 A1= "Good Morning";
 	
-	String R1= ReverseString(A1);
+	StringMethods SM1= new StringMethods();
 	
-	System.out.println(S1+" Reverse String is :" + R1); 
+	String R1= SM1.ReverseString(A1);
+	
+	System.out.println(R1); 
 	}
 }  
 
+class StringMethods
+{
 public static String ReverseString(String S1)
 {
 
