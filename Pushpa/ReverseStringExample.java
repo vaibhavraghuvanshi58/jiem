@@ -1,10 +1,11 @@
 //Reverse a String using reversal logic
 
+
 public class ReverseStringExample
 {  
 	public static void main(String args[])
 	{  
-	String1 A1= "Good Morning";
+	String A1= "Good Morning";
 	
 	StringMethods SM1= new StringMethods();
 	
@@ -22,14 +23,15 @@ public static String ReverseString(String S1)
 	int len=S1.length();
 	
 	char RS[] = new char[len];
-	
-	for(int i=0;i<len;i++)
+			
+	for(int i=len-1;i>=0;i--)
 	{
 		
-		RS[i]= S1.charat((len-1));
-		len=--len;
+		RS[(len-i)-1]= S1.charAt((i));
+		
 	}
 	
 	 
-retrun RS; 
+return new String(RS); 
+}
 }
